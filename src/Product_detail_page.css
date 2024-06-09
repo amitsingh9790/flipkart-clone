@@ -1,0 +1,219 @@
+.container{
+    height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 1px;
+    background-color: white;
+    padding: 1%;
+}
+.container_left{
+    height: 42rem;
+    width: 40%;
+    /* border: 10px solid rgb(186, 186, 45); */
+    display: flex;
+    flex-direction: column;
+}
+.container_right{
+    width: 57%;
+    /* border: 3px solid green; */
+    padding: 0.4%;
+    
+}
+.small_image{
+    max-height: 30rem;
+    min-height: 21rem;
+    min-width:0%;
+    padding: 20px;
+    transition: transform .2s;
+}
+.small_image:hover{
+    transform: scale(1.05);
+}
+
+.button_div{
+    display: flex;
+    /* border: 3px solid green; */
+    justify-content:space-evenly;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+.btn-orange {
+    background-color: rgb(255 159 0);
+    height: 3rem;
+    width:13rem;
+  }
+.btn-orange:hover {
+    background-color: rgb(255 159 0);
+  }
+
+.btn-red{
+    background-color: rgb(251 100 27);
+    height: 3rem;
+    width:13rem;
+}
+.btn-red:hover {
+    background-color: rgb(251 100 27);
+}
+.product_image{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+.ratetext{
+    color: #fff;
+    padding: 2px 4px 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 12px;
+    vertical-align: middle;
+    background-color: #388e3c;
+}
+
+.textgreen{
+    color: rgb(15, 155, 15);
+}
+.table_product,
+.td_product{
+  border: 1px solid #e6e2e2;
+  width: 45rem;
+  padding: 1rem;
+}
+.th_product{
+    padding: 1rem;
+}
+.offersection{
+    padding: .1rem;
+}
+.reviewsection{
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+}
+.offersection {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .offersection span {
+    margin-left: 10px; 
+  }
+  .darkcolor{
+    color: #818080;
+  }
+  .btntxt{
+    color: white;
+    font-weight: 600;
+  }
+  .iconbtn{
+    transform: scale(1.2);
+    color: white;
+  }
+  .piccircle{
+    transform: scale(3);
+    color: #bdbaba;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_left,
+    .container_right {
+        width: 100%;
+    }
+
+    .button_div {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .btn-orange,
+    .btn-red {
+        width: 120%;
+        margin-bottom: 20px;
+    }
+    .btn-red{
+        width: 40%;
+    }
+    .small_image {
+        width: 80%;
+        height: auto;
+    }
+    .container_right{
+      width: 100%;
+      /* border: 3px solid green; */
+      padding: 0.4%;   
+  }
+  .offersection {
+    width: 340px; 
+    /* overflow: hidden;   */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  .reviewsection{
+    display: flex;
+    flex-direction: column;
+  }
+  .reviewsection>.btn-red{
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .table_product{
+    width: 330px; 
+  }  
+  .td_product{
+    width: 370px; 
+  }
+  .td-p {
+    width: 30rem; /* Adjust the width as needed */
+  }
+  
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container_left,
+    .container_right {
+        width: 48%; /* Adjust width for tablets */
+    }
+
+    .button_div {
+        justify-content: flex-start; /* Align buttons to the left on tablets */
+    }
+
+    .btn-orange,
+    .btn-red {
+        width: auto; /* Reset button width for tablets */
+        margin-bottom: 0; /* Remove margin for tablets */
+        margin-right: 10px; /* Add space between buttons */
+    }
+
+    .small_image {
+        width: auto; /* Reset image width for tablets */
+        height: 30rem;
+    }
+    reviewsection{
+      display: flex;
+      flex-direction: column;
+
+    }
+}

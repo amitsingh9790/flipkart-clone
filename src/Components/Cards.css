@@ -1,0 +1,65 @@
+.card{
+ padding: 1rem;   
+ max-height: 30rem;
+ min-height: 30rem;
+}
+.card-img-top{
+    max-height: 20rem;
+    max-width: 12rem;
+    min-height: 15rem;
+    min-width: 15rem;
+}
+.card-title{
+    text-transform: capitalize;    
+}
+.card-form{
+  margin: 10px;
+}
+/*these styles for the select dropdowns */
+select{
+  padding: 4px;
+  margin-bottom: 10px;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+
+}
+/*these styles for the double slider */
+.horizontal-slider {
+  width: 100%;
+  max-width: 500px;
+  margin: 10px 0;
+}
+.horizontal-slider .example-thumb {
+  width: 15px;
+  height: 15px;
+  line-height: 24px;
+  border-radius: 50%;
+  font-size: 0;
+  text-align: center;
+  background-color: #ffffff; /* Flipkart blue color */
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  top: 50%; /* Center the pointer vertically */
+  transform: translateY(-50%); /* Adjust for centering */
+}
+.horizontal-slider .example-track {
+  top: 50%;
+  height: 2px;
+  background: #ccc;
+  transform: translateY(-50%);
+}
+.example-track.example-track-0 {
+  background: #ccc;
+}
+.example-track.example-track-1 {
+  background: #2874f0;
+}
+
+.Product_listed{
+  /* margin-right: 10rem; */
+  padding-right: 2rem;
+}

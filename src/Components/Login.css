@@ -1,0 +1,24 @@
+.login_container{
+    margin-top: 2rem;
+    min-height: 30rem;
+    display: flex;
+    justify-content: center;
+}
+.login_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:20rem;
+}
+.login_left>div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items:center;
+}
+.login_left>img{
+    transform: scale(0.7);
+}
+.loginForm{
+    border: none;
+}

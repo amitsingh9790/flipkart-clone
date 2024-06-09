@@ -1,0 +1,95 @@
+.h-container{
+    background-color: #ebeaea;
+    overflow-x:hidden;
+}
+
+.home-top{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background-color: white;
+}
+.home-li1{
+    display: flex;
+    flex-direction: column;
+}
+.h-main-wrapper{ 
+    margin: 1rem;
+    background-color: white;
+}
+.h-main-wrapper>h1{
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+}
+.h-wrapper{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    /* margin: 1rem; */
+
+}
+.h-wrapper::-webkit-scrollbar{
+    width: 0;
+}
+.h-card{
+    border: 1px solid #ebeaea;
+    margin-top: 2rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding: 1rem;
+    max-height: 19rem;
+    max-width: 15rem;
+    min-width: 10rem;
+}
+
+.h-card img {
+    max-height: 7rem;
+    max-width: 8rem;
+}
+
+
+.h-name {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.h-price {
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #000000;
+    text-align: center;
+}
+.h-foot{
+    padding: 2rem;
+    color: rgb(135, 135, 135);
+}
+.h-foot>h1,h2{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(135, 135, 135);
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    .home-top{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+    .home-li1{
+        padding-top: 10px;
+        margin-left: 26px;
+    }
+    
+}
